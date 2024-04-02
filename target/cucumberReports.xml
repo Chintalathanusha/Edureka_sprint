@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="69.944" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Test Feature" name="signup for new user" time="14.089">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on signup...................................................passed
+And user enter email as "mamata3234567@gmail.com"...........................passed
+And user enter mobile number as "9194796312"................................passed
+And user click on the signup button.........................................passed
+And user create the password and click on startLearning button..............passed
+Then user should be signup successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Feature" name="Successful login with valid credintials" time="9.428">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on login1...................................................passed
+And user enter valid login name as "chintalatanusha@gmail.com"..............passed
+And user enter valid password as "Thanusha@"................................passed
+And user click on the login button..........................................passed
+Then user should be logged in successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Feature" name="Unsuccessful login with invalid credentials" time="11.309">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on login2...................................................passed
+And user enter valid login name.............................................passed
+And user enter invalid password.............................................passed
+And user click on the login button..........................................passed
+Then user should see an error message indicating invalid credentials........passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Feature" name="Unsuccessful login with invalid credentials" time="13.516">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on login5...................................................passed
+And user enter invalid login name...........................................passed
+And user enter valid password...............................................passed
+And user click on the login button..........................................passed
+Then user should see an error message indicating invalid msg................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Feature" name="Handling different user roles - Example #1.1" time="9.88">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on login4...................................................passed
+And user enter "chintalatanusha@gmail.com" and "Thanusha@"..................passed
+And user click on the login button..........................................passed
+Then I should be logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Feature" name="Handling different user roles - Example #1.2" time="11.533">
+<system-out><![CDATA[
+Given user on the home page.................................................passed
+When user click on login4...................................................passed
+And user enter "srijajasti22@gmail.com" and "Jasti@455".....................passed
+And user click on the login button..........................................passed
+Then I should be logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
